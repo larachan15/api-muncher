@@ -1,5 +1,8 @@
 <h1>Muncher</h1>
 
-<p>
-  Find your flavor...
-  </p>
+<%= form_tag recipes_path, method: :get do %>
+<%= label_tag(:message, "Find Your Flavor") %>
+<%= text_field_tag(:message) %>
+<%= submit_tag("Search") %>
+
+<% end %>
