@@ -1,1 +1,16 @@
-<h1>List of Recipes</h1>
+<h1>Muncher</h1>
+<%= render partial: "header" %>
+<h2>List of Recipes</h2>
+
+<section>
+<% if @recipes %>
+    <ul>
+      <% @recipes.each do |r| %>
+        <li>
+          <%= link_to r.label, recipe_path(:id) %>
+          <%= image_tag r.image %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</section>
