@@ -31,17 +31,21 @@ class EdamamApiWrapper
     return recipes
   end
 
-  def self.show_recipe_detail(uri)
-    url = BASE_URL + "r=#{uri}"
-    data = HTTParty.get(url).parsed_response
+  def self.show_recipe_detail(id)
+    uri = URI.encode("http://www.edamam.com/ontologies/edamam.owl#recipe")
+    url = BASE_URL + "r=#{uri}" + "_#{id}" + "&app_id=#{APP_ID}" + "&app_key=#{APP_KEY}"
+
+    # encoded_url = URI.encode(url)
+    data = HTTParty.get(url)
 
     if data
-      label = data["recipe"]["label"]
-      uri = data["recipe"]["uri"]
-      image = data["recipe"]["image"]
+      label = data[0]["label"]
+      uri = data[0]["uri"]
+      image = data[0]["image"]
 
-      data = Recipe.new(label, uri, image)
+      return Recipe.new(label, uri, image)
     end
+
     # return Recipe.new(recipe_id)
   end
 
