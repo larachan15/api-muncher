@@ -23,11 +23,11 @@ class EdamamApiWrapper
 
     # return data
 
-    if data["hits"]
+    # if data["hits"]
       data["hits"].each do |recipe_data|
         recipes << create_recipe(recipe_data)
       end
-    end
+    # end
     return recipes
   end
 
@@ -38,15 +38,15 @@ class EdamamApiWrapper
     # encoded_url = URI.encode(url)
     data = HTTParty.get(url)
 
-    if data
-      label = data[0]["label"]
-      uri = data[0]["uri"]
-      image = data[0]["image"]
+    # if data
+    #   label = data[0]["label"]
+    #   uri = data[0]["uri"]
+    #   image = data[0]["image"]
+    #
+    #   return Recipe.new(label, uri, image)
+    # end
 
-      return Recipe.new(label, uri, image)
-    end
-
-    # return Recipe.new(recipe_id)
+    return create_recipe(id)
   end
 
   private
