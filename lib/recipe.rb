@@ -1,7 +1,7 @@
 require 'pry'
 
 class Recipe
-  attr_reader :label, :id, :image, :url, :ingredients, :health_labels
+  attr_reader :label, :image, :id, :url, :ingredients, :health_labels
 
   # def initialize(label, uri, image, options = {})
   #   raise ArgumentError if label == nil || label == "" || uri == nil || uri == "" || image == nil || image == ""
@@ -15,7 +15,7 @@ class Recipe
   #   @health_labels = options[:health_labels]
   # end
 
-  def initialize(label, uri, image)
+  def initialize(label, image, uri)
     raise ArgumentError, "need a label (got #{label})" if label == nil || label == ""
     raise ArgumentError, "need an uri (got #{uri})" if uri == nil || uri == ""
     raise ArgumentError, "need an image (got #{image})" if image == nil || image == ""
