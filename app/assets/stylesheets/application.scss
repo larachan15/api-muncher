@@ -11,7 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  */
-
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300');
 /* Custom bootstrap variables must be set or imported *before* bootstrap. */
 @import "bootstrap";
 /* Import scss content */
@@ -25,7 +25,7 @@ html, body {
 body {
   background-color: #F5F5F5;
   color: #2C2C2C;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -35,9 +35,50 @@ body {
   background-blend-mode: soft-light;
 }
 
+body#homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+a {
+  color: #FFF;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:visted {
+  color: #FFF;
+}
+
+a.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+a.card-img-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #F94A04;
+ }
+
 .homepage {
   // text-align: center;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  // display: flex;
+  // justify-content: center;
+  // align-self: center;
+}
+
+.muncher-header {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 6em;
+  font-weight: 500;
+  color: #FFF;
 }

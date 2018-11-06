@@ -3,7 +3,7 @@ require 'will_paginate/array'
 class RecipesController < ApplicationController
 
   def homepage
-
+    
   end
 
   def index
