@@ -16,3 +16,28 @@
 @import "bootstrap";
 /* Import scss content */
 @import "**/*";
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #2C2C2C;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg');
+  background-color: #666666;
+  background-blend-mode: soft-light;
+}
+
+.homepage {
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
