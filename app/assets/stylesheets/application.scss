@@ -104,8 +104,24 @@ a.card-img-overlay:hover {
 }
 
 p {
+  color: #F94A04;
+  font-size: 18px;
+}
+
+li {
+  list-style: none;
   color: #FFF;
   font-size: 18px;
+}
+
+.pagination {
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.pagination a:hover {
+  color: #F94A04;
 }
 
 footer {
