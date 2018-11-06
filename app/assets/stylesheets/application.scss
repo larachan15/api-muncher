@@ -17,14 +17,11 @@
 /* Import scss content */
 @import "**/*";
 
-
 html, body {
   height: 100%;
 }
 
 body {
-  background-color: #F5F5F5;
-  color: #2C2C2C;
   font-family: 'Open Sans Condensed', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,12 +32,29 @@ body {
   background-blend-mode: soft-light;
 }
 
-body#homepage {
+h2 {
+  color: #F94A04;
+  // text-align: center;
+  font-weight: 400;
+}
+
+.muncher-header h1 {
+  font-size: 600%;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 500;
+  color: #FFF;
+}
+
+#muncher-homepage {
+  // font-size: 800%;
+  height: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
   align-items: center;
-  // color: black;
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 10%;
 }
 
 a {
@@ -56,6 +70,19 @@ a:visted {
   color: #FFF;
 }
 
+.container {
+  margin-top: 1%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-group {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
 a.card-img-overlay {
   background-color: rgba(0, 0, 0, 0.2);
   color: #FFF;
@@ -67,20 +94,10 @@ a.card-img-overlay {
 a.card-img-overlay:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: #F94A04;
+  transition: .5s;
  }
 
-
-.muncher-header {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 6em;
-  font-weight: 500;
-  color: #FFF;
-}
-//
-// article {
-//   padding-top: 150px;
-// }
-
-main {
-  padding: 5rem;
+footer {
+  text-align: center;
+  padding-bottom: 30px;
 }
