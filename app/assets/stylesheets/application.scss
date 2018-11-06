@@ -40,7 +40,7 @@ body#homepage {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FFF;
+  // color: black;
 }
 
 a {
@@ -69,16 +69,18 @@ a.card-img-overlay:hover {
   color: #F94A04;
  }
 
-.homepage {
-  // text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-self: center;
-}
 
 .muncher-header {
   font-family: 'Fredericka the Great', cursive;
   font-size: 6em;
   font-weight: 500;
   color: #FFF;
+}
+//
+// article {
+//   padding-top: 150px;
+// }
+
+main {
+  padding: 5rem;
 }
