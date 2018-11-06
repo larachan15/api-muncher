@@ -35,7 +35,14 @@ body {
 h2 {
   color: #F94A04;
   // text-align: center;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 2.75em;
+}
+
+h4 {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .muncher-header h1 {
@@ -46,7 +53,6 @@ h2 {
 }
 
 #muncher-homepage {
-  // font-size: 800%;
   height: stretch;
   display: flex;
   flex-direction: column;
@@ -70,17 +76,13 @@ a:visted {
   color: #FFF;
 }
 
-.container {
-  margin-top: 1%;
-}
-
 .card {
   text-align: center;
 }
 
 .card-group {
   margin-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 a.card-img-overlay {
@@ -93,11 +95,24 @@ a.card-img-overlay {
 
 a.card-img-overlay:hover {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #F94A04;
   transition: .5s;
+  color: #F94A04;
  }
+
+.container {
+  margin-top: 30px;
+}
+
+p {
+  color: #FFF;
+  font-size: 18px;
+}
 
 footer {
   text-align: center;
-  padding-bottom: 30px;
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  padding: 1rem;
 }
