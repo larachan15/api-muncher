@@ -15,7 +15,7 @@ class Recipe
   # #   @health_labels = options[:health_labels]
   # # end
   #
-  def initialize(label, uri, image, ingredients, health_labels, url, recipe_source)
+  def initialize(label, uri, image, ingredients = [], health_labels = [], url = nil, recipe_source = nil)
     raise ArgumentError, "need a label (got #{label})" if label == nil || label == ""
     raise ArgumentError, "need an uri (got #{uri})" if uri == nil || uri == ""
     raise ArgumentError, "need an image (got #{image})" if image == nil || image == ""
