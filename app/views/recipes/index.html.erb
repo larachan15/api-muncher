@@ -4,7 +4,7 @@
 
 
 <div class="container">
-  <h2>List of Recipes for: <%= params[:search].capitalize %></h2>
+  <h2>List of Recipes for: <%= params[:search] %></h2>
   <%= will_paginate @recipes %>
   <div class="row">
         <% @recipes.each do |recipe| %>
