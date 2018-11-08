@@ -12,10 +12,7 @@
  *
  */
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300');
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-	background: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg')
-  no-repeat center center fixed;
-}
+
 /* Custom bootstrap variables must be set or imported *before* bootstrap. */
 @import "bootstrap";
 /* Import scss content */
@@ -34,6 +31,12 @@ body {
   background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg');
   background-color: #666666;
   background-blend-mode: soft-light;
+}
+
+@media screen and (max-width:800px) {
+  body {
+    background-size: cover;
+    background-attachment:fixed }
 }
 
 h2 {
