@@ -24,6 +24,8 @@ html, body {
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
+  width: 100%;
+  background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   // background-attachment: fixed;
@@ -33,10 +35,39 @@ body {
   background-blend-mode: soft-light;
 }
 
-@media screen and (max-width:800px) {
-  body {
-    background-size: cover;
-    background-attachment:fixed }
+/* Retina display */
+@media screen and (min-width: 1024px){
+    body{
+        background-image: url('../img/retina.jpg');
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+    body{
+        background-image: url('../img/desktop.jpg');
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .body{
+        background-image: url('../img/tablet.jpg');
+    }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    body{
+        background-image: url('../img/mobile-hd.jpg');
+    }
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+    body{
+        background-image: url('../img/mobile-ld.jpg');
+    }
 }
 
 h2 {
