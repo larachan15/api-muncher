@@ -24,15 +24,14 @@ html, body {
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  width: 100%;
-  background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg');
-  background-color: #666666;
-  background-blend-mode: soft-light;
 }
 
 /* Retina display */
