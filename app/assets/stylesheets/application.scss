@@ -23,7 +23,6 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,41 +31,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg');
-}
-
-/* Retina display */
-@media screen and (min-width: 1024px){
-    body{
-        background-image: url('../img/retina.jpg');
-    }
-}
-
-/* Desktop */
-@media screen and (min-width: 980px) and (max-width: 1024px){
-    body{
-        background-image: url('../img/desktop.jpg');
-    }
-}
-
-/* Tablet */
-@media screen and (min-width: 760px) and (max-width: 980px){
-    .body{
-        background-image: url('../img/tablet.jpg');
-    }
-}
-
-/* Mobile HD */
-@media screen and (min-width: 350px) and (max-width: 760px){
-    body{
-        background-image: url('../img/mobile-hd.jpg');
-    }
-}
-
-/* Mobile LD */
-@media screen and (max-width: 350px){
-    body{
-        background-image: url('../img/mobile-ld.jpg');
-    }
+  background-color: #666666;
+  background-blend-mode: soft-light;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h2 {
