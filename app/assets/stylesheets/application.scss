@@ -18,11 +18,13 @@
 /* Import scss content */
 @import "**/*";
 
-html, body {
-  height: 100%;
-}
+// html, body {
+//   height: 100%;
+// }
 
 body {
+  background-color: #666666;
+  background-blend-mode: soft-light;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,8 +33,6 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_1280.jpg');
-  background-color: #666666;
-  background-blend-mode: soft-light;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
